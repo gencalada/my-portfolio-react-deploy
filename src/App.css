@@ -1,8 +1,16 @@
 body {
-  background-color: grey;
+  background-color:black;
 }
 
 .overall-site-border {
   display: flex;
   flex-direction: column;
+}
+
+.projects {
+  color:green
+}
+
+.aboutMe {
+  color:green
 }
