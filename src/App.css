@@ -1,16 +1,86 @@
+/* ALL */
 body {
   background-color:black;
 }
-
 .overall-site-border {
   display: flex;
   flex-direction: column;
 }
 
-.projects {
-  color:green
+
+
+/* NAVEGATION BAR */
+.navBar {
+  color: silver;
 }
 
+
+/* GREETER - Padding (located in all components) */
+.greeter {
+  height: 50vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(87, 37, 87);
+  color: silver;
+}
+.padding {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+
+/* ABOUT ME */
 .aboutMe {
-  color:green
+  color:silver;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5vw;
+
+}
+
+
+
+/* PROJECT */
+.projects {
+  color: silver;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15vh 0 15vh 0;
+}
+.projects-flex {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
+.project-cards {
+  height: 30vh;
+  width: 225vw;
+  border: 2px solid pink;
+  border-radius: 25px;
+  padding: 15px;
+  margin: 15px;
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+
+
+
+/* CONTACT ME */
+.contactMe {
+  color: silver;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+
 }
