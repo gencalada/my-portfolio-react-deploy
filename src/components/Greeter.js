@@ -4,7 +4,7 @@ const Greeter = () => {
     return(
         <div className='greeter'>
             <h1 className='padding'>Gregory Encalada</h1>
-            <h3 className='padding'>"Awesome quote here"</h3>
+            <h3 className='padding'>"The difference between a novice and a masteris that the master has failed more times than the novice has tried"</h3>
         </div>
     )
 }
