@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   Collapse,
   Navbar,
@@ -7,37 +7,51 @@ import {
   Nav,
   NavItem,
   NavLink,
-} from "reactstrap";
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  NavbarText,
+} from 'reactstrap';
 
+function NavBar(args) {
+  const [isOpen, setIsOpen] = useState(false);
 
+  const toggle = () => setIsOpen(!isOpen);
 
-const NavBar = () => {
-    return (
-      const [collapsed, setCollapsed] = useState(true);
-      const toggleNavbar = () => setCollapsed(!collapsed);
-      return (
-        <div>
-          <Navbar color="info" light expand="sm">
-            <NavbarBrand href="/" className="me-auto">
-              Apartment Bandito's
-            </NavbarBrand>
-            <NavbarToggler onClick={toggleNavbar} className="me-2" />
-            <Collapse isOpen={!collapsed} navbar>
-              <Nav navbar>
-                <NavItem>
-                  <NavLink href="/apartmentIndex/">Index</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/signin">
-                    SignIn
-                  </NavLink>
-                </NavItem>
-              </Nav>
-            </Collapse>
-          </Navbar>
-        </div>
-      );
-    )};
+  return (
+    <div>
+      <Navbar {...args}>
+        <NavbarBrand href="/">Welcome!</NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="me-auto" navbar>
+            <NavItem>
+              <NavLink href="/components/">About Me</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="https://github.com/reactstrap/reactstrap">
+                Projects
+              </NavLink>
+            </NavItem>
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret>
+                Socials
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem>GitHub</DropdownItem>
+                <DropdownItem>LinkedIn</DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>Reset</DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+          </Nav>
+          <NavbarText></NavbarText>
+        </Collapse>
+      </Navbar>
+    </div>
+  );
+}
     
   
 
