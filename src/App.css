@@ -17,7 +17,7 @@ body {
 
 /* GREETER - Padding (located in all components) */
 .greeter {
-  height: 50vh;
+  height: 90vh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -34,6 +34,7 @@ body {
 
 /* ABOUT ME */
 .aboutMe {
+  height: 90vh;
   color:silver;
   text-align: center;
   display: flex;
@@ -47,6 +48,7 @@ body {
 
 /* PROJECT */
 .projects {
+  height: 100vh;
   color: silver;
   text-align: center;
   display: flex;
@@ -78,6 +80,7 @@ body {
 
 /* CONTACT ME */
 .contactMe {
+  height: 100vh;
   color: silver;
   margin-top: 50px;
   margin-bottom: 50px;
