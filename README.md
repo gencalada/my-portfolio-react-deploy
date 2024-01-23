@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+<!-- removed NODE_VERSION on package.jason and now will need to update NODE_VERSION on render site. 
+
+keeping NODE_VERSION up to date:
+- run command    $node -v   to find out rails version
+- Next create an environment variable on render: 
+- go to render dashboard
+- click on portfolio
+- on left panel, click on 'environment'
+- update NODE_VERSION Value using the verion given to us when we ran command     $node -v 
+- save changes
+- redeploy site -->
