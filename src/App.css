@@ -1,10 +1,16 @@
 /* ALL */
 body {
-  background-color:black;
+  background-image: url(https://i.imgur.com/POYChhF.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
 }
 .overall-site-border {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  background-color:rgb(255, 255, 255, 0.1);
 }
 
 
@@ -22,7 +28,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(87, 37, 87);
   color: silver;
 }
 .padding {
