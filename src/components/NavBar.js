@@ -7,49 +7,31 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
-} from 'reactstrap'
+} from 'reactstrap';
 
+function NavBar() {
+  const [collapsed, setCollapsed] = useState(true);
 
-
-
-function NavBar(args) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
+  const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
     <div>
-      <Navbar {...args}>
-        <NavbarBrand href="/">Welcome!</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="me-auto" navbar>
+      <Navbar color="faded" light>
+        <NavbarBrand href="/" className="me-auto">
+          reactstrap
+        </NavbarBrand>
+        <NavbarToggler onClick={toggleNavbar} className="me-2" />
+        <Collapse isOpen={!collapsed} navbar>
+          <Nav navbar>
             <NavItem>
-              <NavLink href="/components/">About Me</NavLink>
+              <NavLink href="/components/">Components</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="https://github.com/reactstrap/reactstrap">
-                Projects
+                GitHub
               </NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Socials
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>GitHub</DropdownItem>
-                <DropdownItem>LinkedIn</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>Reset</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
           </Nav>
-          <NavbarText></NavbarText>
         </Collapse>
       </Navbar>
     </div>
