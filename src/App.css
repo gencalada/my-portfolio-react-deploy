@@ -1,12 +1,12 @@
 /* removing default settings */
-*{
+/* *{
   margin: 0;
   padding:0;
   box-sizing: border-box
-}
+} */
 /* ALL */
 body {
-  background-image: url(https://i.imgur.com/POYChhF.png);
+  background-image: url(https://i.imgur.com/z7ECVID.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -16,14 +16,33 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color:rgb(255, 255, 255, 0.1);
+  /* background-color:rgb(255, 255, 255, 0.1); */
 }
 
 
 
-/* NAVEGATION BAR */
-.navBar {
+/* HEADER */
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
   color: silver;
+}
+.nav-link {
+  color:silver;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+}
+ul, li {
+  list-style-type: none!important;
+}
+
+/* FOOTER */
+.Footer {
+  text-align: center;
+  padding: 10px;
+  color: silver
 }
 
 
