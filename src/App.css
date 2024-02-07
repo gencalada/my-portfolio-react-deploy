@@ -31,6 +31,9 @@ body {
 ul, li {
   list-style-type: none!important;
 }
+l1 a {
+  transform: scale(0.25px);
+}
 /* GREETER - Padding (located in all components) */
 .greeter {
   height: 75vh;
